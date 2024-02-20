@@ -23,14 +23,8 @@ if ($vek >= 18) {
     echo "<p>{$meno} je dieťa.</p>";
 }
 
-// list
 $zvierata = array("Dog", "Cat", "Horse");
 
-echo "<ul>";
-foreach($zvierata as $item){
-    echo "<li>$item</li>";
-}
-echo "</ul>";
 // **Numerické pole**
 $cisla = array(1, 2, 3, 4, 5);
 
@@ -53,6 +47,12 @@ for ($i = 0; $i < count($cisla); $i++) {
 }
 
 // **Cyklus `foreach`**
+echo "<ul>";
+foreach($zvierata as $item){
+    echo "<li>$item</li>";
+}
+echo "</ul>";
+
 foreach ($osoba as $kluc => $hodnota) {
     echo "<p>{$kluc}: {$hodnota}</p>";
 }
